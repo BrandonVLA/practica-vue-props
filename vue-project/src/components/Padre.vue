@@ -1,6 +1,9 @@
 <template>
   <div>
-    <componente-editor v-bind:textoAEditar="titulo"/>
+    <componente-editor
+    v-bind:textoAEditar="titulo"
+    v-bind:textoAVisualizar="titulo"
+    />
     <!-- <componente-vista v-bind:textoAVisualizar=""> -->
   </div>
 </template>
@@ -12,8 +15,7 @@ import Editor from './Editor.vue'
 export default {
   data() {
     return {
-      titulo: '',
-
+      titulo: 'Hola Mundo',
     }
   },
 

@@ -1,6 +1,6 @@
 <template>
-  <div>
-
+  <div class="componente-vista-css">
+    <h1> Valor de Vista: {{ textoAVisualizar }}</h1>
   </div>
 </template>
 
@@ -16,5 +16,7 @@
 
 
 <style>
-
+.componente-vista-css {
+  background-color: green;
+}
 </style>
