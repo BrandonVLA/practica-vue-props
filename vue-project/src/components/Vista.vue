@@ -1,6 +1,8 @@
 <template>
   <div class="componente-vista-css">
-    <h1>Valor desde Componente Vista: {{ textoAVisualizar }}</h1>
+    <h1>Componente Vista</h1>
+    <p>Titulo desde Editor a Vista:</p>
+    <p>{{ textoAVisualizar }}</p>
   </div>
 </template>
 
@@ -14,9 +16,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .componente-vista-css {
-  background-color: grey;
+  background-color: darkblue;
   padding: 20px;
+  color: lightgreen;
 }
 </style>

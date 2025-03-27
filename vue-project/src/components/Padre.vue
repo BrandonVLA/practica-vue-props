@@ -1,6 +1,9 @@
 <template>
   <div>
-    <componente-editor v-bind:textoAEditar="titulo" @actualizar:textoAEditar="actualizarTitulo" />
+    <componente-editor
+      v-bind:textoAEditar="titulo"
+      v-on:actualizar:textoAEditar="actualizarTitulo"
+    />
 
     <componente-vista v-bind:textoAVisualizar="titulo" />
   </div>
