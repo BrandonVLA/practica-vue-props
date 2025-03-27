@@ -1,17 +1,16 @@
 <template>
   <div class="textoAEditar">
-    <input v-model="textoEditado">
-    <h2>Valor nuevo es {{ textoEditado }}</h2>
+    <input v-model="textoEditado" v-on:input="actualizartexto" />
+    <h2>Valor nuevo desde Editor es: {{ textoEditado }}</h2>
   </div>
 </template>
 
 <script>
- export default {
+export default {
   props: {
-    textoAEditar:
-      {
-        type: String,
-      }
+    textoAEditar: {
+      type: String,
+    },
   },
 
   mounted() {
@@ -25,10 +24,11 @@
   },
 
   methods: {
-
+    actualizartexto() {
+      this.$emit('actualizar:textoAEditar', this.textoEditado)
+    },
   },
- }
+}
 </script>
 
-<style>
-</style>
+<style></style>

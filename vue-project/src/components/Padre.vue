@@ -1,10 +1,8 @@
 <template>
   <div>
-    <componente-editor
-    v-bind:textoAEditar="titulo"
-    v-bind:textoAVisualizar="titulo"
-    />
-    <!-- <componente-vista v-bind:textoAVisualizar=""> -->
+    <componente-editor v-bind:textoAEditar="titulo" @actualizar:textoAEditar="actualizarTitulo" />
+
+    <componente-vista v-bind:textoAVisualizar="titulo" />
   </div>
 </template>
 
@@ -20,11 +18,16 @@ export default {
   },
 
   components: {
-      'componente-editor': Editor,
-      'componente-vista': Vista,
+    'componente-editor': Editor,
+    'componente-vista': Vista,
+  },
+
+  methods: {
+    actualizarTitulo(nuevoTexto) {
+      this.titulo = nuevoTexto
+    },
   },
 }
 </script>
 
-<style>
-</style>
+<style></style>

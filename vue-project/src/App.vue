@@ -11,7 +11,6 @@ import Padre from './components/Padre.vue'
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
       <Padre v-bind:textoAEditar="titulo"/>
-      <Padre v-bind:textoAVisualizar="titulo" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
