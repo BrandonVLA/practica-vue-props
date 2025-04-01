@@ -16,7 +16,7 @@ import Editor from './Editor.vue'
 export default {
   data() {
     return {
-      titulo: 'Hola Mundo',
+      titulo: '',
     }
   },
 

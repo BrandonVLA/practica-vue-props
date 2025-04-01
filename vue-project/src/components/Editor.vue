@@ -1,6 +1,10 @@
 <template>
   <div class="textoAEditar componente-editor-css">
-    <input v-model="textoEditado" v-on:input="actualizartexto" />
+    <input
+      v-model="textoEditado"
+      v-on:input="actualizartexto"
+      placeholder="Ingrese un nuevo titulo"
+    />
     <h2>Valor nuevo desde Editor es: {{ textoEditado }}</h2>
   </div>
 </template>
